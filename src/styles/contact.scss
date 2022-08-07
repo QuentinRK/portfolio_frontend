@@ -1,0 +1,89 @@
+@import 'variables';
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+    color: $primary-color;
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .error-response, .success-response {
+        padding: 1rem;
+        border-radius: 2rem;
+        transition: all 1s ease-in-out;
+    }
+
+    .error-response {
+        background-color: red;
+    }
+
+    .success-response {
+        background-color: green;
+    }
+
+    form label {
+        font-size: 1.3rem;
+    }
+
+    #message, #name, #email {
+        display: flex;
+        border-radius: .2rem;
+        text-align: left;
+        width: 40rem;
+        font-size: 1rem;
+        padding: .5rem;
+        margin-bottom: 1rem;
+    }
+
+    #name, #email {
+        max-height: 2.5rem;
+    }
+
+    #message {
+        margin-bottom: 3rem;
+    }
+
+    .btn {
+        background: #9C2E8F;
+        margin-bottom: 2rem;
+        border: none;
+        padding: 1rem;
+        border-radius: 1rem;
+        width: 9rem;
+        color: $primary-color;
+        cursor: pointer;
+        align-self: flex-end;
+        
+    }
+
+    .btn-disabled{
+        background: #7d7d7d;
+        margin-bottom: 2rem;
+        border: none;
+        padding: 1rem;
+        border-radius: 1rem;
+        width: 9rem;
+        color: $primary-color;
+        cursor: pointer;
+        align-self: flex-end;
+        
+    }
+}
+
+@media screen and (max-width: 760px){
+
+
+    .contact-container {
+
+        #message, #name, #email {
+            width: 22.5rem;
+        }
+
+    }
+}

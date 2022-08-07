@@ -1,0 +1,43 @@
+.hero {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; 
+    height: 61rem;
+    color: white;
+
+    h1 {
+      font-size: 5rem;
+    }
+
+    h3 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+.hero-container {
+    background-image: url('../images/coding-photo.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 960px){
+
+  .hero {
+    padding: 0 1rem;
+    height: 35rem;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+  }
+}
+  

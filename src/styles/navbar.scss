@@ -1,0 +1,80 @@
+@import 'variables';
+
+.mobileIcons {
+  display: none;
+  cursor: pointer;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+    
+.navbar-items {
+  list-style: none;
+  display: flex;
+  padding: 1rem;
+
+  .navbar-item {
+    display: flex;
+    padding: 1rem;
+  }
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+}
+
+.links{
+  cursor: pointer; 
+}
+
+.links:hover {
+  color: black;
+}
+    
+
+@media screen and (max-width: 960px){
+    .mobileIcons {
+      display: flex;
+      font-size: 1.8rem;
+    }
+
+    .navbar-items {
+      position: absolute;
+      flex-direction: column;
+      width: 100%;
+      top: 7rem;
+      left: -100rem;
+      opacity: 0;
+      transition: all 0.7s ease-in-out;
+    }
+
+    .navbar-items.active {
+      background: rgb(231, 47, 57);
+      left: 0;
+      opacity: 1;
+      transition: all .5s ease-in-out;
+      z-index: 1;
+
+    }
+
+    .links:hover {
+      background-color: rgb(233, 72, 80);
+    }
+
+
+    .links {
+      display: table;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .title {
+      font-size: 1.5rem;
+    }
+
+  }

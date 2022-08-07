@@ -1,0 +1,42 @@
+@import 'variables';
+
+.header-container{
+
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1000;
+
+
+  .header, .header2 {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      align-items: center;
+      padding: 1.5rem 1rem;
+      height: 7rem;
+      color: white;
+      transition: .3s ease-in-out;
+    }
+
+    .header {
+      background-color: $black-color;
+    }
+    
+    .header2 {
+    
+      background-color: $header-color;
+    }
+    
+}
+
+@media screen and (max-width: 960px){
+    
+  .header-container{
+    
+    .header, .header2 {
+      justify-content: space-between;
+      padding: 0 3rem;
+    }
+  }
+}
