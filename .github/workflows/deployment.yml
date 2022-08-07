@@ -28,7 +28,7 @@ jobs:
           json: ${{ secrets.CONFIG}}
           dir: "./src/config"
 
-      - name: Node Runner
+      - name: Node
       - uses: actions/setup-node@v2
         with:
           node-version: 16.x
