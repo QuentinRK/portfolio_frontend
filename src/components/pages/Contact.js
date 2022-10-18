@@ -56,7 +56,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="contact">
       <form onSubmit={post} id="form">
         <label for="Name">Name:</label>
         <br />

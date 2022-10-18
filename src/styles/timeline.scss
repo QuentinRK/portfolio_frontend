@@ -1,0 +1,22 @@
+@import 'variables';
+
+
+.work-container {
+    display: flex;
+    color: $text-color;
+    font-size: 1.2rem;
+}
+
+
+.vertical-timeline-element-date {
+        color: black;
+    
+}
+
+
+@media screen and (max-width: 960px) {
+
+    .date-element{
+        color: white;
+    }
+}

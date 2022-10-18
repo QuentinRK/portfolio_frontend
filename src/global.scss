@@ -15,7 +15,7 @@
   min-height: 100vh;
 }
 
-.hero, .section-container, .projects-container {
+.hero, .section-container, .projects-container, .work-container {
   display: flex;
   flex-wrap: nowrap;
   border-radius: 8px;
@@ -23,7 +23,7 @@
   flex-direction: column;
 }
 
-.section-container, .projects-container {
+.section-container, .projects-container, .work-container {
   background-color: $primary-color;
   margin: 3rem 20rem;
   padding: 3rem;
@@ -39,7 +39,7 @@ body {
 @media screen and (max-width: 1200px){
 
 
-  .section-container, .projects-container {
+  .section-container, .projects-container, .work-container {
 
     margin: 3rem 10rem;
   
@@ -49,7 +49,7 @@ body {
 
 @media screen and (max-width: 960px){
 
-  .section-container, .projects-container {
+  .section-container, .projects-container, .work-container {
 
     margin: 3rem 1rem;
   
