@@ -17,16 +17,10 @@
     background-position: fixed;
     margin-left: -2rem;
 
-
     &:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        transform: rotateZ(5deg) scale(1.1);
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     }
-
-    &:nth-child(even):hover{
-        transform: rotateZ(-5deg) scale(1.1);
-    }
-
+    
     .project-title {
         display: flex;
         justify-content: center;
@@ -85,5 +79,20 @@
     .card {
         margin-left: -3rem;
     }
+
 }
 
+@media screen and (min-width: 960px) {
+
+    .card {
+    &:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            transform: rotateZ(5deg) scale(1.1);
+        }
+    
+    &:nth-child(even):hover {
+        transform: rotateZ(-5deg) scale(1.1);
+    }
+    
+    }
+}
