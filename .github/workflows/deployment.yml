@@ -39,7 +39,7 @@ jobs:
           npm run build
 
       - name: Deploy to S3 bucket
-        run: aws s3 sync ./build/ ${{secrets.S3_BUCKET}} --delete
+        run: aws s3 sync ./build/ s3://${{secrets.S3_BUCKET}} --delete
 
       - name: Merge To Master
         uses: peter-evans/create-pull-request@v3
